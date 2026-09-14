@@ -15,4 +15,4 @@ class Rectangle:
 
 if __name__ == '__main__':
     rect = Rectangle(4, 5)
-    print(rect.area())
+    print("Rectangle area =", rect.area())
