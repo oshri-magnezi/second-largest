@@ -1,3 +1,9 @@
+def second_largest(numbers):
+    unique = sorted(set(numbers))
+    if len(unique) < 2:
+        raise ValueError("Need at least two distinct numbers")
+    return unique[-2]
+
 class Rectangle:
 
     def __init__(self, width: float, height: float) -> None:
@@ -9,4 +15,4 @@ class Rectangle:
 
 if __name__ == '__main__':
     rect = Rectangle(4, 5)
-    print(rect.area())
+    print("Rectangle area =", rect.area())
