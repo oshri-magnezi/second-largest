@@ -1,3 +1,9 @@
+def second_largest(numbers):
+    unique = sorted(set(numbers))
+    if len(unique) < 2:
+        raise ValueError("Need at least two distinct numbers")
+    return unique[-2]
+
 class Rectangle:
 
     def __init__(self, width: float, height: float) -> None:
